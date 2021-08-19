@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-private-bucket"
+  bucket = "my-tf-private-bucket-2"
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "My second bucket"
     Environment = "Dev"
   }
 }

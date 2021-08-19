@@ -7,3 +7,13 @@ resource "aws_s3_bucket" "b" {
     Environment = "Dev"
   }
 }
+
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-private-bucket"
+  acl    = "private"
+
+  tags = {
+    Name        = "My first bucket"
+    Environment = "Dev"
+  }
+}

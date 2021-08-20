@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "c" {
+resource "aws_s3_bucket" "d" {
   bucket = "my-tf-private-bucket-2"
   acl    = "private"
 
@@ -14,6 +14,16 @@ resource "aws_s3_bucket" "b" {
 
   tags = {
     Name        = "My first bucket"
+    Environment = "Dev"
+  }
+}
+
+resource "aws_s3_bucket" "e" {
+  bucket = "my-tf-private-bucket-three"
+  acl    = "private"
+
+  tags = {
+    Name        = "My third bucket"
     Environment = "Dev"
   }
 }

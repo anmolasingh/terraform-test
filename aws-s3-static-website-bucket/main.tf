@@ -5,7 +5,7 @@ module "s3_bucket_for_logs" {
   acl    = "public-read"
 
   # Allow deletion of non-empty bucket
-  force_destroy = true
+  force_destroy = false
 
   attach_elb_log_delivery_policy = true
 }

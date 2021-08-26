@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "s3_bucket" {
   acl    = var.my_acl
   policy = <<EOF
 {
-    "Version": "2012-10-17",
+    "Version": "2020-10-17",
     "Statement": [
         {
             "Sid": "PublicReadGetObject",

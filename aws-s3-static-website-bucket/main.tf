@@ -5,7 +5,7 @@ module "s3_bucket_for_logs" {
   acl    = "public-read"
 
   # Allow deletion of non-empty bucket
-  force_destroy = false
+  force_destroy = true
 
   attach_elb_log_delivery_policy = true
 }
@@ -13,7 +13,7 @@ module "s3_bucket_for_logs" {
 resource "aws_s3_bucket" "s3_bucket" {
   bucket = var.bucket_name
 
-  acl    = "private"
+  acl    = "private" #var.my_acl
   policy = <<EOF
 {
     "Version": "2020-10-17",

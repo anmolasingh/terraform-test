@@ -23,7 +23,7 @@ EOF
 
   website {
     index_document = "index2.html"
-    error_document = "error3.html"
+    error_document = "error4.html"
   }
 
   tags = var.tags

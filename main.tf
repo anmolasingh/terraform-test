@@ -7,6 +7,6 @@ module "website_s3_bucket" {
 
   tags = {
     Terraform   = "true"
-    Environment = "dev"
+    Environment = "prod"
   }
 }

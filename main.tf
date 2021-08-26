@@ -1,5 +1,5 @@
 module "website_s3_bucket" {
-  source = "./aws-s3-static-website-bucket"
+  source = "./aws-s3-static-website-bucket-test"
 
   bucket_name = "anmol_module_bucket_1"
 

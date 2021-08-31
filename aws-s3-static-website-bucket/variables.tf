@@ -12,5 +12,5 @@ variable "tags" {
 variable "my_acl" {
   description = "My acl"
   type        = string
-  default     = "public-read"
+  default     = "private"
 }

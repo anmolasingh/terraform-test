@@ -3,7 +3,7 @@ module "website_s3_bucket" {
 
   bucket_name = "anmol_module_bucket_1"
 
-  my_acl = "private"
+  my_acl = "public-read"
 
   tags = {
     Terraform   = "true"
